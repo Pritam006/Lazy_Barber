@@ -1,0 +1,76 @@
+/* assets/css/style.css */
+
+:root {
+  --primary-black: #121212;
+  --secondary-black: #1e1e1e;
+  --primary-grey: #757575;
+  --secondary-grey: #bdbdbd;
+  --light-grey: #f5f5f5;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--light-grey);
+  color: var(--primary-black);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: var(--primary-black) !important;
+}
+
+.navbar-brand, .nav-link {
+  color: var(--white) !important;
+}
+
+.nav-link:hover {
+  color: var(--secondary-grey) !important;
+}
+
+.hero-section {
+  background-color: var(--secondary-black);
+  color: var(--white);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--primary-black);
+  border-color: var(--primary-black);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-black);
+  border-color: var(--secondary-black);
+}
+
+.btn-outline-primary {
+  color: var(--primary-black);
+  border-color: var(--primary-black);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-black);
+  color: var(--white);
+}
+
+.card {
+  border: 1px solid var(--secondary-grey);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: var(--primary-black);
+  color: var(--white);
+  padding: 20px 0;
+  margin-top: auto;
+}
